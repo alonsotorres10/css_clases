@@ -1,0 +1,85 @@
+.text-left {text-align: left;}
+.text-center {text-align: center;}
+.text-right {text-align: right;}
+.text-justify {text-align: justify;}
+.line-height-initial {line-height: initial;}
+//margin importatn
+.ml-auto, .mx-auto, .m-auto{	margin-left: auto 	!important;	}
+.mr-auto, .mx-auto, .m-auto{	margin-right: auto 	!important;	}
+.mt-auto, .my-auto, .m-auto{	margin-top: auto 	!important;	}
+.mb-auto, .my-auto, .m-auto{	margin-bottom: auto !important;	}
+
+.h-100{ height: 100%;}
+.w-100{ width: 100%;}
+.h-auto{ height: auto;}
+.w-auto{ width: auto;}
+
+
+.object-fit{ object-fit: cover; }
+.fw-400{font-weight: 400;}
+.fw-600{font-weight: 600;}
+.fw-800{font-weight: 800;}
+
+.position-absolute { position: absolute;}
+.position-relative { position: relative;}
+
+.white-space-preline{ white-space: pre-line !important;}
+.display-inline {display: inline;}
+.display-inline-flex{ display: inline-flex;}
+.display-none { display: none;}
+
+.justify-content-start {
+    -webkit-box-pack: start!important;
+    -ms-flex-pack: start!important;
+    justify-content: flex-start!important;
+}
+.justify-content-end {
+    -webkit-box-pack: end!important;
+    -ms-flex-pack: end!important;
+    justify-content: flex-end!important;
+}
+.justify-content-center {
+    -webkit-box-pack: center!important;
+    -ms-flex-pack: center!important;
+    justify-content: center!important;
+}
+.justify-content-between {
+    -webkit-box-pack: justify!important;
+    -ms-flex-pack: justify!important;
+	justify-content: space-between!important;
+}
+.justify-content-around {
+    -ms-flex-pack: distribute!important;
+    justify-content: space-around!important;
+}
+
+
+
+
+@for $s from 0 to 99
+{
+	//margins
+	.ml-#{$s}px, .mx-#{$s}px, .m-#{$s}px {	margin-left: #{$s}px !important;	}
+	.mr-#{$s}px, .mx-#{$s}px, .m-#{$s}px {	margin-right: #{$s}px !important;	}
+	.mt-#{$s}px, .my-#{$s}px, .m-#{$s}px {	margin-top:   #{$s}px !important;	}
+    .mb-#{$s}px, .my-#{$s}px, .m-#{$s}px {	margin-bottom: #{$s}px !important;	}
+    
+	.pl-#{$s}px, .px-#{$s}px, .p-#{$s}px {	padding-left: #{$s}px !important;	}
+	.pr-#{$s}px, .px-#{$s}px, .p-#{$s}px {	padding-right: #{$s}px !important;	}
+	.pt-#{$s}px, .py-#{$s}px, .p-#{$s}px {	padding-top:   #{$s}px !important;	}
+    .pb-#{$s}px, .py-#{$s}px, .p-#{$s}px {	padding-bottom: #{$s}px !important;	}
+
+	.h-#{$s}px{ height: #{$s}px !important;	}
+	.h-#{$s}{ height: #{$s}% !important;	}
+	.h-#{$s}vh{ height: #{$s}vh !important;	}
+	.h-max-#{$s}px{ max-height: #{$s}px !important;	}
+	.w-#{$s}{ width: #{$s}% !important;	}
+	.w-#{$s}{ width: #{$s}% !important;	}
+	.w-#{$s}vw{ width: #{$s}vw !important;	}
+    .w-max-#{$s}px{ max-width: #{$s}px !important;	}	
+	.top-#{$s}px{ top: #{$s}px !important;	}
+	.bottom-#{$s}px{ bottom: #{$s}px !important;	}
+	.left-#{$s}px{ left: #{$s}px !important;	}
+	.right-#{$s}px{ right: #{$s}px !important;	}
+    
+}

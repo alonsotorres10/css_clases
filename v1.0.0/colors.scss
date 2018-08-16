@@ -1,0 +1,87 @@
+$menta : #76D3C9;
+$salmon : #fc7f81;
+$azul-1 : #22909e;
+$azul-2: #3B5E6E;
+$gray-super-light : #a7a6a6;
+$gray-super-light-2 : #dbdbdb;
+$gray-light : #757575;
+$gray: #696969;
+$gray-dark : #5f5f5f;
+$azul :  #0BC8FF;
+$naranja: #ff9365;
+$blanco: white;
+$negro: black;
+$rojo: red;
+$verde: green;
+$verde-2: #06ebb2;
+
+$colors: (
+(menta, #76D3C9),
+(salmon , #fc7f81),
+(azul-1 , #22909e),
+(azul-2, #3B5E6E),
+(gray-super-light , #a7a6a6),
+(gray-super-light-2 , #dbdbdb),
+(gray-light , #757575),
+(gray, #696969),
+(gray-dark , #5f5f5f),
+(azul ,  #0BC8FF),
+(naranja, #ff9365),
+(blanco, white),
+(negro, black),
+(rojo, red),
+(verde, green),
+(verde-2, #06ebb2),
+);
+
+@each $color in $colors
+{
+ 	.color-#{nth($color, 1)}
+	{
+		color: nth($color, 2) !important;
+	}
+	.back-color-#{nth($color, 1)}
+	{
+		background-color: nth($color, 2) !important;
+	}
+}
+
+@each $color in $colors
+{
+    @for $size from 1 to 99
+    {
+        .letra-#{nth($color, 1)}-#{$size}
+        {
+            color: #{nth($color, 2)} !important;
+            font-size: #{$size}px !important;
+        }       
+    }
+}
+.border-none{border: none !important;}
+@each $color in $colors
+{
+    @for $size from 1 to 10
+    {
+        .border-b-#{nth($color, 1)}-#{$size}
+        {
+            border-bottom: #{$size} solid #{nth($color, 2)} !important;
+        }       
+        .border-t-#{nth($color, 1)}-#{$size}
+        {
+            border-top: #{$size} solid #{nth($color, 2)} !important;
+        }       
+        .border-l-#{nth($color, 1)}-#{$size}
+        {
+            border-left: #{$size} solid #{nth($color, 2)} !important;
+        }       
+        .border-r-#{nth($color, 1)}-#{$size}
+        {
+            border-right: #{$size} solid #{nth($color, 2)} !important;
+        }       
+        .border-#{nth($color, 1)}-#{$size}
+        {
+            border: #{$size} solid #{nth($color, 2)} !important;
+        }       
+    }
+}
+
