@@ -64,23 +64,23 @@ $colors: (
     {
         .border-b-#{nth($color, 1)}-#{$size}
         {
-            border-bottom: #{$size} solid #{nth($color, 2)} !important;
+            border-bottom: #{$size}px solid #{nth($color, 2)} !important;
         }       
         .border-t-#{nth($color, 1)}-#{$size}
         {
-            border-top: #{$size} solid #{nth($color, 2)} !important;
+            border-top: #{$size}px solid #{nth($color, 2)} !important;
         }       
         .border-l-#{nth($color, 1)}-#{$size}
         {
-            border-left: #{$size} solid #{nth($color, 2)} !important;
+            border-left: #{$size}px solid #{nth($color, 2)} !important;
         }       
         .border-r-#{nth($color, 1)}-#{$size}
         {
-            border-right: #{$size} solid #{nth($color, 2)} !important;
+            border-right: #{$size}px solid #{nth($color, 2)} !important;
         }       
         .border-#{nth($color, 1)}-#{$size}
         {
-            border: #{$size} solid #{nth($color, 2)} !important;
+            border: #{$size}px solid #{nth($color, 2)} !important;
         }       
     }
 }
